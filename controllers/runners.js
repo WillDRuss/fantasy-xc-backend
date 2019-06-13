@@ -1,7 +1,8 @@
-const runners = require('../json_files/runners.json')
+const model = require('../model/model.js')
+
 
 const runnersHandle = (req, res) => {
-    res.json(runners);
+    res.json(model.runners);
 }
 
 module.exports = {
